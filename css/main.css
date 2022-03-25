@@ -171,7 +171,7 @@ body {
     background-color: #fff;
     letter-spacing: 0px;
 }
-h1, h2, h3, h4, h5, h6{ font-family: "Poppins",sans-serif; margin-bottom: 15px; font-weight: 600; color: #263045;}
+h1, h2, h3, h4,h5, h6{ font-family: "Poppins",sans-serif; margin-bottom: 15px; font-weight: 600; color: #263045;}
 h1 { font-size: 45px; line-height: 50px; text-transform: uppercase;}
 h2 { font-size: 35px; line-height: 40px; }
 h3 { font-size: 27px; line-height: 35px; }
@@ -1684,13 +1684,13 @@ ul.footer-nav-menu li:not(:last-child):after {
     Page-Title-Row
 ------------------------*/
 
-.ttm-page-title-row { 
+/* .ttm-page-title-row { 
     position: relative;
     background-image: url("../images/ttm-pagetitle-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 div.ttm-page-title-row > .ttm-bg-layer { background-color: rgba(24,35,51,0.85); }
 .ttm-page-title-row { 
     display: block;
