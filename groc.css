@@ -2,7 +2,7 @@
     position: relative;
     left: 0px;
     top: 0px;
-    background: #ee635c;
+    background:#f6f6f6;
     width: 100%;
 }
 
@@ -23,14 +23,14 @@
     font-size: 18px;
     line-height: 116.7%;
     /* identical to box height, or 21px */
-    color: #FFFFFF;
+    color: #2954d5;
 }
 
 .hero {
     left: 0px;
     top: 1px;
     background-image: url(./assets/pattern_bg.png);
-    background-color: #eb3e35;
+    background-color:#5735eb;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
