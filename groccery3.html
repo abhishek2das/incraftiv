@@ -21,6 +21,46 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
         <script src="js/main.js"></script> 
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        
+        <!-- all link -->
+
+        <!-- favicon icon -->
+<link rel="shortcut icon" href="images/fav_bg_InCraftiv_logo.png" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+
+<!-- animate -->
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+<!-- fontawesome -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="css/themify-icons.css"/>
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"/>
+
+
+<!-- REVOLUTION LAYERS STYLES -->
+
+<link rel="stylesheet" type="text/css" href="revolution/css/rs6.css">
+
+<!-- prettyphoto -->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+
+<!-- shortcodes -->
+<link rel="stylesheet" type="text/css" href="css/shortcodes.css"/>
+
+<!-- main -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
     <style>
     
         body {
@@ -185,7 +225,7 @@
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
-                        <img src="./assets/phone.png" alt="" class="img-fluid float-right">
+                        <img src="./assets/mobile_app_image.png" alt="" class="img-fluid float-right">
                     </div>
                 </div>
 
@@ -202,7 +242,7 @@
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
-                        <img src="./assets/phone.png" alt="" class="img-fluid float-right">
+                        <img src="./assets/mobile_app_image.png" alt="" class="img-fluid float-right">
                     </div>
                 </div>
 
@@ -219,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
-                        <img src="./assets/phone.png" alt="" class="img-fluid float-right">
+                        <img src="./assets/mobile_app_image.png" alt="" class="img-fluid float-right">
                     </div>
                 </div>
 
@@ -295,7 +335,7 @@
                 </li>
                 <li class="nav-item mx-auto mb-5">
                     <a class="nav-link btn test customerapp btn-outline-primary  mt-5" id="pills-customer-tab" data-toggle="pill"
-                        href="#pills-customer" role="tab" aria-controls="pills-customer" aria-selected="false">Reports Panel </a>
+                        href="#pills-customer" role="tab" aria-controls="pills-customer" aria-selected="false">Reports Panel</a>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -428,20 +468,19 @@
         </p>
         <div class="row ">
             <div class="col-6">
-                <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5" onclick="onTabsClick('admin')">Admin
-                    Panel</button>
+                <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5" onclick="onTabsClick('admin')">Admin Panel</button>
             </div>
-            <div class="col-6">
+            <!-- <div class="col-6">
                 <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5" onclick="onTabsClick('super')">Super
                     Admin</button>
+            </div> -->
+            <div class="col-6">
+                <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5"
+                    onclick="onTabsClick('deliver')">AIS Mobile App</button>
             </div>
             <div class="col-6">
                 <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5"
-                    onclick="onTabsClick('deliver')">Delivery App</button>
-            </div>
-            <div class="col-6">
-                <button class="nav-link btn mx-auto  btn-outline-danger w-100 mt-5"
-                    onclick="onTabsClick('customer')">Customer App</button>
+                    onclick="onTabsClick('customer')">Reports Panel</button>
             </div>
 
             <div class="col-12 mt-3" id="tabber"></div>
@@ -715,92 +754,86 @@
     function onAdminClick() {
         document.getElementById('tabber').innerHTML = `
         <div class="row">
-            <img src="./assets/desktop.png" class="img-fluid text-center d-block mb-3" />
+            <img src="assets/Admin Panel.png" class="img-fluid text-center d-block mb-3" />
             <hr> <br>
             <div class="col-12 bg-light mt-3">
-                <h5><strong>Order Management</strong></h5>
+                <h5><strong>Dashboards for easy view</strong></h5>
                 <ul>
-                    <li><i class="fa fa-check"></i> Completed Orders</li>
-                    <li><i class="fa fa-check"></i> Pending Orders</li>
-                    <li><i class="fa fa-check"></i> Refund/Canceled Orders</li>
-                    <li><i class="fa fa-check"></i> Accept New Orders</li>
-                    <li><i class="fa fa-check"></i> Assign to Deliver Agent</li>
+                    <li><i class="fa fa-check"></i> Audits</li>
+                    <li><i class="fa fa-check"></i> Scheduled audits</li>
+                    <li><i class="fa fa-check"></i> questions</li>
+                    <li><i class="fa fa-check"></i> Plants</li>
+                    <li><i class="fa fa-check"></i> Departments</li>
+                    <li><i class="fa fa-check"></i> Location</li>
                 </ul>
 
-                <h5><strong>Chat System</strong></h5>
+                <h5><strong>Location Management</strong></h5>
                 <ul>
-                    <li>
-                        <i class="fa fa-check"></i> Chat Access with Deliver Agent,
-                        Customer and Super Admin
-                    </li>
+                    <li><i class="fa fa-check"></i> View, Add or Remove Plant Location </li>
+                    <li><i class="fa fa-check"></i> View, Add or Remove department location</li>
+
                 </ul>
                 
-                <h5><strong>Manage Inventory</strong></h5>
+                <h5><strong>Audit management</strong></h5>
                 <ul>
-                    <li><i class="fa fa-check"></i> Add - Edit Product Details</li>
-                    <li><i class="fa fa-check"></i> Manage offers</li>
-                    <li><i class="fa fa-check"></i> Push Notifications</li>
+                    <li><i class="fa fa-check"></i> Add audit</li>
+                    <li><i class="fa fa-check"></i> Add question set to audits</li>
+                    <li><i class="fa fa-check"></i> Assign Auditor from user list</li>
+                    <li><i class="fa fa-check"></i> Toggle audit status</li>
+                    <li><i class="fa fa-check"></i> Edit and archive audits</li>
+                    <li><i class="fa fa-check"></i> Schedule and view scheduled audits</li>
                 </ul>
-                <h5><strong>Live Tracking</strong></h5>
+                <h5><strong>MIS and Reports</strong></h5>
                 <ul>
-                    <li><i class="fa fa-check"></i> Live Tracking of all delivery agents. </li>
-                    <li><i class="fa fa-check"></i> Expected time to pickup</li>
+                    <li><i class="fa fa-check"></i> Overall Audit Summary</li>
+                    <li><i class="fa fa-check"></i> Departmental Charts</li>
+                    <li><i class="fa fa-check"></i> Clause Charts</li>
                 </ul>
 
-                <h5><strong>Staff Management</strong></h5>
-                <ul>
-                    <li><i class="fa fa-check"></i> Attendance Manangement </li>
-                    <li><i class="fa fa-check"></i> Leave Manangement</li>
-                </ul>
+              
             </div>
         </div>
         `;
     };
 
-    function onSuperClick() {
-        document.getElementById('tabber').innerHTML = `
-        <div class="row">
-            <div class="col-12 text-center">
-                <img src="./assets/super_admin_image.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
-            </div>
-            <div class="col-12 mt-3">
-                <p class="lead"> <i class="fa fa-check"></i> Mobile Dashboard</p>
-            <p class="lead"> <i class="fa fa-check"></i> Monitor Orders</p>
-            <p class="lead"> <i class="fa fa-check"></i> Manage Inventory</p>
-            <p class="lead"> <i class="fa fa-check"></i> Payment Status</p>
-            <p class="lead"> <i class="fa fa-check"></i> Staff Management</p>
-            </div>
-            <div class="col-12">
-                <p class="lead"> <i class="fa fa-check"></i> Daily Sales/ Delivery Reports</p>
-                <p class="lead"> <i class="fa fa-check"></i> Chat With Admin</p>
-                <p class="lead"> <i class="fa fa-check"></i> Approval on Offers & Discounts</p>
-                <p class="lead"> <i class="fa fa-check"></i> Live Tracking</p>
-                <p class="lead"> <i class="fa fa-check"></i> Feedbacks & Ratings</p>
-            </div>
-        </div>
-        `;
-    }
+    // function onSuperClick() {
+    //     document.getElementById('tabber').innerHTML = `
+    //     <div class="row">
+    //         <div class="col-12 text-center">
+    //             <img src="./assets/super_admin_image.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
+    //         </div>
+    //         <div class="col-12 mt-3">
+    //             <p class="lead"> <i class="fa fa-check"></i> Mobile Dashboard</p>
+    //         <p class="lead"> <i class="fa fa-check"></i> Monitor Orders</p>
+    //         <p class="lead"> <i class="fa fa-check"></i> Manage Inventory</p>
+    //         <p class="lead"> <i class="fa fa-check"></i> Payment Status</p>
+    //         <p class="lead"> <i class="fa fa-check"></i> Staff Management</p>
+    //         </div>
+    //         <div class="col-12">
+    //             <p class="lead"> <i class="fa fa-check"></i> Daily Sales/ Delivery Reports</p>
+    //             <p class="lead"> <i class="fa fa-check"></i> Chat With Admin</p>
+    //             <p class="lead"> <i class="fa fa-check"></i> Approval on Offers & Discounts</p>
+    //             <p class="lead"> <i class="fa fa-check"></i> Live Tracking</p>
+    //             <p class="lead"> <i class="fa fa-check"></i> Feedbacks & Ratings</p>
+    //         </div>
+    //     </div>
+    //     `;
+    // }
 
     function onDeliveryClick() {
         document.getElementById('tabber').innerHTML = `
         <div class="row">
             <div class="col-12 text-center">
-                <img src="./assets/deliver_App_image.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
+                <img src="./assets/mobile_app_image.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
             </div>
             <div class="col-12 mt-3">
-                <p class="lead"> <i class="fa fa-check"></i>Assigned Order Details</p>
-            <p class="lead"> <i class="fa fa-check"></i> Chat With Admin and Customer</p>
-            <p class="lead"> <i class="fa fa-check"></i>One-Click Call To Customers</p>
-            <p class="lead"> <i class="fa fa-check"></i>Update Order Status. (Complete/Canceled)</p>
-            <p class="lead"> <i class="fa fa-check"></i> AI-based Route Plans</p>
+                <p class="lead"> <i class="fa fa-check"></i>Assign auditee from user list</p>
+            <p class="lead"> <i class="fa fa-check"></i> Check and manage status of in - progress Audits</p>
+            <p class="lead"> <i class="fa fa-check"></i>Audit execution</p>
+            <p class="lead"> <i class="fa fa-check"></i>View details of available as well as archived audit</p>
             </div>
-            <div class="col-12">
-                <p class="lead"> <i class="fa fa-check"></i> E-Sign Page</p>
-                <p class="lead"> <i class="fa fa-check"></i> Multiple Modes For Receiving Payment</p>
-                <p class="lead"> <i class="fa fa-check"></i>Push Notification</p>
-                <p class="lead"> <i class="fa fa-check"></i> Check Delivery History</p>
-                <p class="lead"> <i class="fa fa-check"></i>Performance Reports</p>
-            </div>
+
+
         </div>`;
     
     }
@@ -810,21 +843,14 @@
         document.getElementById('tabber').innerHTML = `
         <div class="row">
             <div class="col-12 text-center">
-                <img src="./assets/customer-app-phone.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
+                <img src="./assets/Reports.png" class="img-fluid d-block text-center w-50 mx-auto" alt="">
             </div>
             <div class="col-12 mt-3">
-                <p class="lead"> <i class="fa fa-check"></i> Browse Products</p>
-            <p class="lead"> <i class="fa fa-check"></i> Easy Search</p>
-            <p class="lead"> <i class="fa fa-check"></i> Offers & Discounts</p>
-            <p class="lead"> <i class="fa fa-check"></i> Various Payment Modes</p>
-            <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p>
-            </div>
-            <div class="col-12">
-                <p class="lead"> <i class="fa fa-check"></i> Contact Delivery Agent</p>
-                <p class="lead"> <i class="fa fa-check"></i> Schedule delivery</p>
-                <p class="lead"> <i class="fa fa-check"></i> Re-Order</p>
-                <p class="lead"> <i class="fa fa-check"></i> Chat with Admin/ Agent</p>
-                <p class="lead"> <i class="fa fa-check"></i> Rating & Feedback</p>
+                <p class="lead"> <i class="fa fa-check"></i> Generate and view reports </p>
+            <p class="lead"> <i class="fa fa-check"></i> Overall Audit Summary</p>
+            <p class="lead"> <i class="fa fa-check"></i> Departmental Charts</p>
+            <p class="lead"> <i class="fa fa-check"></i> Clause Charts</p>
+            <p class="lead"> <i class="fa fa-check"></i> Evidence Reviewr</p>
             </div>
         </div>
         `;
@@ -855,7 +881,27 @@
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">  
 </script>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.js"></script>    
+<script src="js/jquery-waypoints.js"></script>    
+<script src="js/jquery-validate.js"></script> 
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/numinate.min-ver=4.9.3.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Revolution Slider -->
+<script src="revolution/js/revolution.tools.min.js"></script>
+<script src="revolution/js/rs6.min.js"></script>
+<script src="revolution/js/slider.js"></script>
 </body>
 </html>
