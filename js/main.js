@@ -474,7 +474,13 @@ $(".clients-slide").owlCarousel({
         992:{
             items: $('.clients-slide').data('item')
         }
-    }    
+    },
+    items: 5,
+    loop: true,
+    // margin: 10,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true  
 });
 
 // ===== 6- services-slide ==== 
@@ -627,6 +633,16 @@ jQuery('#totop').on('click', function() {      // When arrow is clicked
     
     });
 })(jQuery);
+
+var owlClient = $('.clients-slide');
+owlClient.owlCarousel({
+    items: 5,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true
+});
 
 
 

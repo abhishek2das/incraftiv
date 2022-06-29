@@ -16,7 +16,13 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <!-- responsive -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+        <script src="js/main.js"></script> 
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <style>
+    
         body {
             font-family: 'Source Sans Pro';
 
@@ -29,9 +35,104 @@
 </head>
 
 <body>
+        <!-- preloader start -->
+        <div id="preloader">
+          <div id="status">&nbsp;</div>
+        </div>
+        <!-- preloader end -->
+
+        <!--header start-->
+        <header id="masthead" class="header ttm-header-style-01">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            <li><i class="fa fa-map-marker"></i>B-91, Sector 2, Noida, UP, India</li>
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:sales@inCraftiv.com">sales@inCraftiv.com</a></li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <ul class="top-contact">
+                                <li><i class="fa fa-clock-o"></i>Office Hour: 10:00am - 7:00pm</li>
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <!-- <li><a href="#" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li> -->
+                                    <li><a href="#" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/incraftiv/" class=" tooltip-bottom" data-tooltip="instagram"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/incraftiv" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header visible-title">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="" title="InCraftiv" rel="home">
+                                        <img id="logo-img" class="img-center lazyloaded" data-src="images/InCraftiv_logo.png" alt="logo" src="images/InCraftiv_logo.png">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <div class="ttm-rt-contact">
+                                        <!-- header-icons -->
+                                    </div>
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" class="">
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu">
+                                        <ul class="dropdown">
+                                           <li class=""><a href="index.html">Home</a></li>
+                                     
+                                            <li class="has-submenu"><a href="#" class="active">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="./services/mobile-apps/index.html">Mobile Apps Development</a></li>
+                                                    <li><a href="./services/enterprise-solution/index.html">Enterprise Solution Deployment &amp; Customization</a></li>
+                                                    <li><a href="./services/e-commerce-solutions/index.html">E-Commerce Solutions Deployment &amp; Customization</a></li>
+                                                    <li><a href="./services/product-design/index.html">Product Design &amp; Development</a></li>
+                                                    <li><a href="./services/web-development/index.html">Web Development &amp; Deployment</a></li>
+                                                </ul>
+                                            </li>
+                                              
+                                            <li class="active"><a href="#">Product Solutions</a>
+                                                <ul class="sub-menu">
+                                                     <li><a href="./groccery3.html">Retail Grocery Solution</a></li>
+                                                 </ul>
+                                              </li>
+                                            <li class=""><a href="index.html#pf">Portfolio</a></li>
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+
+        </header><!--header end-->
+    <!-- page end -->
+
+        <!-- Javascript -->
 
     <!-- navbar -->
-     <nav class="navbar d-none d-md-block">
+     <!-- <nav class="navbar d-none d-md-block">
         <div class="container">
             <a class="nav-brand">
                 <img src="assets/InCraftiv_logo.png" alt="logo" style="width: 219px;height: 60px;"/>
@@ -39,8 +140,9 @@
             <div class="float-left" style="min-width: 380px;">
                 <div class="row navItem px-5">
                     <div class="col-4"><a href="./index.html">Home</a></div>
-                    <div class="col-4"><a href="">Pricing</a></div>
-                    <div class="col-4"><a href="">Get a call</a></div>
+                    <div class="col-4"><a href="">service</a></div>
+                    <div class="col-4"><a href="">Product Solutions</a></div>
+                    <div class="col-4"><a href="">Portfolio</a></div>
                 </div>
             </div>
         </div>
@@ -65,23 +167,21 @@
 
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- navbar end -->
 
     <!-- hero slider -->
-    <section class="hero d-none d-md-block">
-        <div class="slider container">
-
+    <section class="hero d-none d-md-block nav_top">
+        <div class="slider container slide_margin">
             <div style="margin-top: 100px;">
                 <div class="row ">
                     <div class="col-md-7">
-                        <div class="hero-heading">Welcome to GrocApp <br> Build your Awesome App</div>
+                        <p class=" hero-heading1 text-break">AIS</p> 
+                        <!-- <p class=" hero-heading2 text-break">your Awesome App</p> -->
                         <br><br>
-                        <div class="hero-para">
-                            the newest Online Grocery Delivery & Management app out there
-                            it is equipped with amazing features and comes with even more
-                            amazing support.
+                        <div class="hero-para1">
+                            A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited 
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
@@ -94,12 +194,11 @@
             <div style="margin-top: 100px;">
                 <div class="row ">
                     <div class="col-md-7">
-                        <div class="hero-heading">Welcome to GrocApp <br> Build your Awesome App</div>
+                        <p class=" hero-heading1 text-break">AIS</p> 
+                        <!-- <p class=" hero-heading2 text-break">your Awesome App</p> -->
                         <br><br>
-                        <div class="hero-para">
-                            the newest Online Grocery Delivery & Management app out there
-                            it is equipped with amazing features and comes with even more
-                            amazing support.
+                        <div class="hero-para1">
+                            A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited 
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
@@ -112,12 +211,11 @@
             <div style="margin-top: 100px;">
                 <div class="row ">
                     <div class="col-md-7">
-                        <div class="hero-heading">Welcome to GrocApp <br> Build your Awesome App</div>
+                        <p class=" hero-heading1 text-break">AIS</p> 
+                        <!-- <p class=" hero-heading2 text-break">your Awesome App</p> -->
                         <br><br>
-                        <div class="hero-para">
-                            the newest Online Grocery Delivery & Management app out there
-                            it is equipped with amazing features and comes with even more
-                            amazing support.
+                        <div class="hero-para1">
+                            A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited 
                         </div>
                     </div>
                     <div class="col-md-5" style="margin-top: -50px;">
@@ -126,7 +224,6 @@
                 </div>
 
             </div>
-
         </div>
     </section>
 
@@ -143,28 +240,23 @@
             <div class="carousel-item active">
                 <img class="d-block w-50 d-block mx-auto" src="./assets/phone.png" alt="First slide">
                 <div class="carousel-caption bg-dark p-2" style="opacity: 0.8;">
-                    <h5>Welcome to GrocApp <br> Build your Awesome App</h5>
-                    <p> the newest Online Grocery Delivery & Management app out there
-                        it is equipped with amazing features and comes with even more
-                        amazing support.</p>
+                    <!-- <p class="fs-1">Welcome to GrocApp<br>your Awesome App</p> -->
+                    <p class="fs-1">AIS</p>
+                    <p>A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-50 d-block mx-auto" src="./assets/phone.png" alt="Second slide">
                 <div class="carousel-caption bg-dark p-2" style="opacity: 0.8;">
-                    <h5>Welcome to GrocApp <br> Build your Awesome App</h5>
-                    <p> the newest Online Grocery Delivery & Management app out there
-                        it is equipped with amazing features and comes with even more
-                        amazing support.</p>
+                    <p class="fs-1">AIS</p>
+                    <p>A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-50 d-block mx-auto" src="./assets/phone.png" alt="Third slide">
                 <div class="carousel-caption bg-dark p-2" style="opacity: 0.8;">
-                    <h5>Welcome to GrocApp <br> Build your Awesome App</h5>
-                    <p> the newest Online Grocery Delivery & Management app out there
-                        it is equipped with amazing features and comes with even more
-                        amazing support.</p>
+                    <p class="fs-1" >AIS</p>
+                    <p>A complete enterprise solution that fulfils all auditing needs for any auditing agency and for companies which are to be audited</p>
                 </div>
             </div>
         </div>
@@ -187,9 +279,9 @@
                 with grocery delivery application development. Our UI/UX designers keep looking for the best way to
                 please users and impress them. The features of our custom and whitelabel solutions to look out for are
             </p>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="padding-top: 22px;">
                 <li class="nav-item text-center mx-auto mb-5">
-                    <a class="nav-link test adminpanel btn show active  btn btn-primary mt-5" id="pills-home-tab" data-toggle="pill"
+                    <a class="nav-link btn test superadminpanel btn-outline-primary  mt-5" id="pills-home-tab" data-toggle="pill"
                         href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Admin Panel</a>
                 </li>
                 <li class="nav-item mx-auto mb-5">
@@ -199,61 +291,62 @@
                 </li>
                 <li class="nav-item mx-auto mb-5">
                     <a class="nav-link btn test delivery btn-outline-primary  mt-5" id="pills-contact-tab" data-toggle="pill"
-                        href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Deliver
-                        App</a>
+                        href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">AIS Auditing Mobile App</a>
                 </li>
                 <li class="nav-item mx-auto mb-5">
                     <a class="nav-link btn test customerapp btn-outline-primary  mt-5" id="pills-customer-tab" data-toggle="pill"
-                        href="#pills-customer" role="tab" aria-controls="pills-customer" aria-selected="false">Customer
-                        App</a>
+                        href="#pills-customer" role="tab" aria-controls="pills-customer" aria-selected="false">Reports Panel </a>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active adminpanel" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="tab-pane fade show active adminpanel marin-top-images-h1" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
                     <div class="row ">
                         <div class="col-3 ">
-                            <h5><strong>Order Management</strong></h5>
+                            <h5><strong>Dashboards for easy view</strong></h5>
                             <ul>
-                                <li><i class="fa fa-check"></i> Completed Orders</li>
-                                <li><i class="fa fa-check"></i> Pending Orders</li>
-                                <li><i class="fa fa-check"></i> Refund/Canceled Orders</li>
-                                <li><i class="fa fa-check"></i> Accept New Orders</li>
-                                <li><i class="fa fa-check"></i> Assign to Deliver Agent</li>
+                                <li><i class="fa fa-check"></i> Audits </li>
+                                <li><i class="fa fa-check"></i> Scheduled audits</li>
+                                <li><i class="fa fa-check"></i> questions</li>
+                                <li><i class="fa fa-check"></i> Plants</li>
+                                <li><i class="fa fa-check"></i> Departments</li>
+                                <li><i class="fa fa-check"></i> Location</li>
                             </ul>
-                            <h5><strong>Chat System</strong></h5>
+                            <h5 class="margin-top-h5"><strong>Location Management</strong></h5>
                             <ul>
-                                <li>
-                                    <i class="fa fa-check"></i> Chat Access with Deliver Agent,
-                                    Customer and Super Admin
-                                </li>
+                                <li><i class="fa fa-check"></i> View, Add or Remove Plant Location </li>
+                                <li><i class="fa fa-check"></i> View, Add or Remove department location</li>
                             </ul>
                         </div>
                         <div class="col-6 img-fluid ">
-                            <img src="./assets/desktop.png" class="img-fluid" alt="">
+                            <img src="assets/Admin Panel.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-3">
-                            <h5><strong>Manage Inventory</strong></h5>
+                            <h5><strong>Audit management</strong></h5>
                             <ul>
-                                <li><i class="fa fa-check"></i> Add - Edit Product Details</li>
-                                <li><i class="fa fa-check"></i> Manage offers</li>
-                                <li><i class="fa fa-check"></i> Push Notifications</li>
+                                <li><i class="fa fa-check"></i> Add audit</li>
+                                <li><i class="fa fa-check"></i> Add question set to audits </li>
+                                <li><i class="fa fa-check"></i> Assign Auditor from user list</li>
+                                <li><i class="fa fa-check"></i> Toggle audit status</li>
+                                <li><i class="fa fa-check"></i> Edit and archive audits</li>
+                                <li><i class="fa fa-check"></i> Schedule and view scheduled audits</li>
                             </ul>
-                            <h5><strong>Live Tracking</strong></h5>
+                            <h5 class="margin-top-h5-2"><strong>MIS and Reports</strong></h5>
                             <ul>
-                                <li><i class="fa fa-check"></i> Live Tracking of all delivery agents. </li>
-                                <li><i class="fa fa-check"></i> Expected time to pickup</li>
+                                <li><i class="fa fa-check"></i>Overall Audit Summary</li>
+                                <li><i class="fa fa-check"></i>Departmental Charts</li>
+                                <li><i class="fa fa-check"></i>Clause Charts</li>
                             </ul>
 
-                            <h5><strong>Staff Management</strong></h5>
+                            <!-- <h5><strong>Staff Management</strong></h5>
                             <ul>
                                 <li><i class="fa fa-check"></i> Attendance Manangement </li>
                                 <li><i class="fa fa-check"></i> Leave Manangement</li>
-                            </ul>
+                            </ul> -->
 
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade superadminpanel" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade superadminpanel marin-top-images-h1" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" >
                 	<div class="row ">
                         <div class="col-3 mt-5">
                         	<p class="lead"> <i class="fa fa-check"></i> Mobile Dashboard</p>
@@ -275,46 +368,46 @@
                     </div>
                   
                 </div>
-                <div class="tab-pane fade delivery" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="tab-pane fade delivery marin-top-images-h1" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                 	<div class="row ">
                         <div class="col-3 mt-5">
-                            <p class="lead"> <i class="fa fa-check"></i> Assigned Order Details</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Chat With Admin and Customer</p>
-                            <p class="lead"> <i class="fa fa-check"></i> One-Click Call To Customers</p>
-                            <p class="lead"> <i class="fa fa-check"></i>Update Order Status. (Complete/Canceled)</p>
-                            <p class="lead"> <i class="fa fa-check"></i>AI-based Route Plans</p>
+                            <p class="lead"> <i class="fa fa-check margin-ais-top "></i>Assign auditee from user list</p>
+                            <p class="lead"> <i class="fa fa-check  "></i>Check and manage status of in - progress Audits</p>
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> One-Click Call To Customers</p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i>Update Order Status. (Complete/Canceled)</p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i>AI-based Route Plans</p> -->
                         </div>
                         <div class="col-6 img-fluid text-center">
-                            <img src="./assets/deliver_App_image.png" class="img-fluid" alt="">
+                            <img src="./assets/mobile_app_image.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-3 mt-5">
-                            <p class="lead"> <i class="fa fa-check"></i> E-Sign Page</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Multiple Modes For Receiving Payment</p>
-                            <p class="lead"> <i class="fa fa-check"></i>Push Notification</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Check Delivery History</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Performance Reports</p>
+                            <p class="lead"> <i class="fa fa-check margin-ais-top "></i>Audit execution</p>
+                            <p class="lead"> <i class="fa fa-check  "></i>View details of available as well as archived audit</p>
+                            <!-- <p class="lead"> <i class="fa fa-check"></i></p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i></p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Performance Reports</p> -->
                         </div>
                     </div>
                     
                 </div>
-                <div class="tab-pane fade customerapp" id="pills-customer" role="tabpanel" aria-labelledby="pills-customer-tab">
+                <div class="tab-pane fade customerapp marin-top-images-h1" id="pills-customer" role="tabpanel" aria-labelledby="pills-customer-tab">
                     <div class="row ">
                         <div class="col-3 mt-5">
-                            <p class="lead"> <i class="fa fa-check"></i> Browse Products</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Easy Search</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Offers & Discounts</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Various Payment Modes</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p>
+                            <p class="lead"> <i class="fa fa-check margin-ais-top "></i> Generate and view reports </p>
+                            <p class="lead"> <i class="fa fa-check"></i> Overall Audit Summary</p>
+                            <p class="lead"> <i class="fa fa-check"></i> Evidence Review</p>
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Various Payment Modes</p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Live tracking of Order</p> -->
                         </div>
                         <div class="col-6 img-fluid text-center">
-                            <img src="./assets/customer-app-phone.png" class="img-fluid" alt="">
+                            <img src="./assets/Reports.png" class="img-fluid" alt="">
                         </div>
                         <div class="col-3 mt-5">
-                            <p class="lead"> <i class="fa fa-check"></i> Contact Delivery Agent</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Schedule delivery</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Re-Order</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Chat with Admin/ Agent</p>
-                            <p class="lead"> <i class="fa fa-check"></i> Rating & Feedback</p>
+                            <p class="lead"> <i class="fa fa-check margin-ais-top "></i> Departmental Charts</p>
+                            <p class="lead"> <i class="fa fa-check"></i> Clause Charts</p>
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Re-Order</p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Chat with Admin/ Agent</p> -->
+                            <!-- <p class="lead"> <i class="fa fa-check"></i> Rating & Feedback</p> -->
                         </div>
                     </div>
                 </div>
@@ -592,10 +685,17 @@
 <script>
     $('.slider').slick({
         dots: true,
-        infinite: false,
-        speed: 300,
+        infinite: true,
+        // speed: 3000,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        items: 2,
+    loop: true,
+    smartSpeed:5000,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true  
     });
 </script>
 <script>
